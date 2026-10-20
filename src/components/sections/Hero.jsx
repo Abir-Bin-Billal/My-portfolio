@@ -170,7 +170,7 @@ function PortraitCard() {
         <div className="relative mx-auto w-full max-w-[380px] rounded-[2.4rem] border border-white/12 bg-ink-900/80 p-2.5 shadow-[0_40px_90px_-40px_rgba(2,6,23,1)] backdrop-blur-xl">
           <div className="relative overflow-hidden rounded-[1.9rem] border border-white/[0.07] bg-gradient-to-b from-ink-800 to-ink-950">
             <img
-              src="/me.jpeg"
+              src="/me.webp"
               alt={`${profile.name} — ${profile.role}`}
               className="aspect-[5/6] h-full w-full object-cover"
             />

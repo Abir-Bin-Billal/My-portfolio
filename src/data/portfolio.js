@@ -201,7 +201,7 @@ export const projects = [
     platforms: ['Android', 'iOS'],
     icon: 'sparkles',
     accent: 'from-violet-glow via-brand-400 to-mint',
-    cover: '/projects/ritual/cover.jpeg',
+    cover: '/projects/ritual/cover.webp',
     blurb:
       'A Flutter wellness ritual tracker built around a liquid-glass design language, Clean Architecture, and BLoC/Cubit state management.',
     description:
@@ -260,7 +260,7 @@ export const projects = [
     platforms: ['Android', 'iOS'],
     icon: 'database',
     accent: 'from-mint via-brand-400 to-brand-600',
-    cover: '/projects/tally/cover.png',
+    cover: '/projects/tally/cover.webp',
     blurb:
       'A production-grade Flutter ledger & inventory app for small merchants — customers, suppliers, stock, cashbox and PDF reports, all offline-first with bi-directional sync.',
     description:
@@ -331,7 +331,7 @@ export const projects = [
     platforms: ['iOS'],
     icon: 'apple',
     accent: 'from-brand-400 via-brand-500 to-violet-glow',
-    cover: '/projects/moneycontrol-ios/cover.png',
+    cover: '/projects/moneycontrol-ios/cover.webp',
     blurb:
       'A native iOS personal finance application featuring an interactive dashboard, income and expense tracking, and budget management.',
     description:
