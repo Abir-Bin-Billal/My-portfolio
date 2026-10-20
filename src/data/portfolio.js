@@ -58,10 +58,9 @@ export const navLinks = [
 ]
 
 export const heroRoles = [
-  'Flutter Developer',
+  'Mobile App Developer',
   'Native iOS Developer',
-  'SwiftUI Craftsman',
-  'Clean Architecture Advocate',
+  'Masterizing SwiftUI',
   'Cross-Platform Problem Solver',
 ]
 
@@ -194,59 +193,192 @@ export const education = [
 
 export const projects = [
   {
+    id: 'ritual',
+    title: 'Ritual',
+    category: 'Wellness',
+    year: '2025',
+    role: 'Flutter Developer',
+    platforms: ['Android', 'iOS'],
+    icon: 'sparkles',
+    accent: 'from-violet-glow via-brand-400 to-mint',
+    cover: '/projects/ritual/cover.jpeg',
+    blurb:
+      'A Flutter wellness ritual tracker built around a liquid-glass design language, Clean Architecture, and BLoC/Cubit state management.',
+    description:
+      'Rich, fully declarative navigation with go_router and a custom animation layer, wrapping every surface in a frosted, light-catching glass design system.',
+    overview: [
+      'Ritual is a wellness ritual tracker built in Flutter. The whole experience is wrapped in a liquid-glass design language — every card, button, sheet, tab, and app bar renders as a frosted, refractive, light-catching surface rather than a flat panel.',
+      'Under the glass sits strict Clean Architecture, with a fully declarative go_router navigation graph and BLoC/Cubit as the single source of truth for state. Motion is treated as part of the UI, with a custom animation library, a hand-painted breathing orb, and media-rich, gesture-driven screens.',
+    ],
+    tech: ['Flutter', 'Dart', 'BLoC', 'Cubit', 'go_router', 'Clean Architecture', 'Dio', 'Firebase'],
+    highlights: ['Liquid-glass design system', 'Clean Architecture + BLoC/Cubit', 'Custom motion & animation library'],
+    features: [
+      {
+        title: 'Liquid glass everywhere',
+        text: 'Every surface — cards, buttons, sheets, tabs, list tiles — is rendered as frosted, refractive glass.',
+      },
+      {
+        title: 'Clean Architecture',
+        text: 'Feature modules split into data, domain, and presentation layers, with dependencies pointing inward.',
+      },
+      {
+        title: 'BLoC & Cubit state',
+        text: 'flutter_bloc is the single source of truth, with Equatable states for predictable rebuilds.',
+      },
+      {
+        title: 'Custom animations',
+        text: 'A bespoke animation library, a hand-painted breathing orb, plus shimmer, lottie, and carousel motion.',
+      },
+      {
+        title: 'Declarative routing',
+        text: 'go_router drives auth-aware navigation and the app shell across every screen.',
+      },
+      {
+        title: 'Core infrastructure',
+        text: 'Dio networking, get_it dependency injection, Hive and sqflite storage, and Firebase push notifications.',
+      },
+    ],
+    gallery: [
+      { src: '/projects/ritual/1.jpeg' },
+      { src: '/projects/ritual/2.jpeg' },
+      { src: '/projects/ritual/3.jpeg' },
+      { src: '/projects/ritual/4.jpeg' },
+      { src: '/projects/ritual/5.jpeg' },
+      { src: '/projects/ritual/6.jpeg' },
+      { src: '/projects/ritual/7.jpeg' },
+      { src: '/projects/ritual/8.jpeg' },
+    ],
+    links: {},
+    featured: true,
+  },
+  {
+    id: 'tally',
+    title: 'Tally',
+    category: 'Business',
+    year: '2025',
+    role: 'Flutter Developer',
+    platforms: ['Android', 'iOS'],
+    icon: 'database',
+    accent: 'from-mint via-brand-400 to-brand-600',
+    cover: '/projects/tally/cover.png',
+    blurb:
+      'A production-grade Flutter ledger & inventory app for small merchants — customers, suppliers, stock, cashbox and PDF reports, all offline-first with bi-directional sync.',
+    description:
+      'Local SQLite is the single source of truth and a custom sync engine reconciles every change with a FastAPI + PostgreSQL backend the moment connectivity returns.',
+    overview: [
+      'Tally is a business ledger and inventory app built for small merchants, Bangladesh-first. It tracks customers and suppliers, keeps a running ledger (dibo / pabo — "gave / received"), manages stock, runs a cashbox, and generates PDF reports.',
+      'It is offline-first by design: every screen reads and writes to a local SQLite database first, so the app is fully usable with no connection. When connectivity returns, a custom bi-directional sync engine reconciles changes with a FastAPI + PostgreSQL backend using a revision cursor and last-write-wins conflict resolution.',
+    ],
+    tech: [
+      'Flutter',
+      'Dart',
+      'BLoC',
+      'Cubit',
+      'Clean Architecture',
+      'SQLite',
+      'FastAPI',
+      'PostgreSQL',
+    ],
+    highlights: [
+      'Offline-first with bi-directional sync',
+      'Clean Architecture · 100+ use cases',
+      'Ledger, inventory & PDF reports',
+    ],
+    features: [
+      {
+        title: 'Offline-first ledger',
+        text: 'SQLite is the single source of truth; the UI never blocks on the network.',
+      },
+      {
+        title: 'Bi-directional sync engine',
+        text: 'Push-then-pull reconciliation with a revision cursor and last-write-wins conflicts.',
+      },
+      {
+        title: 'Inventory & FIFO batches',
+        text: 'Buy/sell movements with FIFO batch costing, low-stock warnings and categories.',
+      },
+      {
+        title: 'Cashbox & reconciliation',
+        text: 'Live balance with a privacy toggle plus exact / extra / shortage matching.',
+      },
+      {
+        title: 'Exportable reports',
+        text: 'Customer lists, ledger, cashbox and expense reports exported to PDF.',
+      },
+      {
+        title: 'Multi-business, EN/BN',
+        text: 'Business switcher, runtime English/Bengali, light/dark themes and ৳ / $ currency.',
+      },
+    ],
+    gallery: [
+      { src: '/projects/tally/1.jpeg' },
+      { src: '/projects/tally/2.jpeg' },
+      { src: '/projects/tally/3.jpeg' },
+      { src: '/projects/tally/4.jpeg' },
+      { src: '/projects/tally/5.jpeg' },
+      { src: '/projects/tally/6.jpeg' },
+      { src: '/projects/tally/7.jpeg' },
+    ],
+    links: {},
+    featured: true,
+  },
+  {
+    id: 'moneycontrol-ios',
     title: 'MoneyControl iOS',
     category: 'Native iOS',
     year: '2025',
+    role: 'iOS Developer',
+    platforms: ['iOS'],
     icon: 'apple',
     accent: 'from-brand-400 via-brand-500 to-violet-glow',
+    cover: '/projects/moneycontrol-ios/cover.png',
     blurb:
       'A native iOS personal finance application featuring an interactive dashboard, income and expense tracking, and budget management.',
     description:
       'Built with intuitive transaction entry flows and modern SwiftUI interfaces to simplify financial tracking and improve usability.',
+    overview: [
+      'MoneyControl iOS is a native personal finance app designed to make tracking money feel effortless. It pairs a clean SwiftUI interface with an interactive dashboard so you can see where your money goes at a glance.',
+      'The app centres on fast transaction entry, clear income and expense breakdowns, and simple budget management — all following Apple’s Human Interface Guidelines for a familiar, native feel.',
+    ],
     tech: ['Swift', 'SwiftUI', 'Native iOS'],
     highlights: ['Interactive finance dashboard', 'Income & expense tracking', 'Budget management'],
+    features: [
+      { title: 'Interactive dashboard', text: 'A glanceable overview of balances, recent activity, and spending trends.' },
+      { title: 'Income & expense tracking', text: 'Log transactions through a focused, low-friction entry flow.' },
+      { title: 'Budget management', text: 'Set budgets per category and watch progress update in real time.' },
+      { title: 'Native SwiftUI UI', text: 'Smooth, platform-native interactions built entirely with SwiftUI.' },
+    ],
+    gallery: [],
+    links: {},
     featured: true,
   },
   {
-    title: 'Daily Expense Tracker',
-    category: 'Cross-Platform',
-    year: 'Nov 2024 — Feb 2025',
-    icon: 'chart',
-    accent: 'from-mint via-brand-400 to-brand-600',
-    blurb:
-      'A cross-platform expense tracking app for daily, monthly, and yearly financial management with offline-first storage.',
-    description:
-      'Users can categorize expenses, set budgets, and view interactive charts for spending insights, without requiring sign-up. Optimized for low-resource devices.',
-    tech: ['Flutter', 'Dart', 'SQLite', 'MySQL', 'Bloc'],
-    highlights: ['Offline-first storage', 'No sign-up required', 'Optimized for low-resource devices'],
-    featured: true,
-  },
-  {
-    title: 'Flutter Chat Pro',
-    category: 'Real-time',
-    year: '2024',
-    icon: 'chat',
-    accent: 'from-violet-glow via-brand-500 to-mint',
-    blurb:
-      'A feature-rich chat application built with Flutter, enabling real-time messaging, media sharing, and user authentication.',
-    description:
-      'Real-time messaging architecture backed by Firebase and Firestore, with media sharing and secure authentication flows.',
-    tech: ['Flutter', 'Firebase', 'Firestore', 'Provider'],
-    highlights: ['Real-time messaging', 'Media sharing', 'User authentication'],
-    featured: true,
-  },
-  {
+    id: 'dare-to-donate',
     title: 'Dare to Donate',
     category: 'Social Impact',
     year: '2024',
+    role: 'Flutter Developer',
+    platforms: ['Android', 'iOS'],
     icon: 'heart',
     accent: 'from-amber-glow via-brand-400 to-violet-glow',
     blurb:
       'A cross-platform blood donation app enabling real-time requests, donor registration, emergency alerts, and admin management.',
     description:
       'Connects donors and recipients with real-time emergency alerts, backed by Firebase Auth, Riverpod state management, and a Node.js service layer.',
+    overview: [
+      'Dare to Donate connects blood donors and recipients through real-time requests and emergency alerts. Donors register once, then get notified when their blood type is needed nearby.',
+      'The app pairs a Flutter front end with Firebase Auth and Riverpod state management, backed by a Node.js service layer for reliable notifications and admin management.',
+    ],
     tech: ['Flutter', 'Firebase Auth', 'Riverpod', 'Node.js'],
     highlights: ['Real-time blood requests', 'Emergency alerts', 'Donor & admin management'],
+    features: [
+      { title: 'Real-time requests', text: 'Post and respond to blood requests as they happen.' },
+      { title: 'Emergency alerts', text: 'Notify matching donors instantly when urgency strikes.' },
+      { title: 'Donor registration', text: 'Simple onboarding that captures blood type and location.' },
+      { title: 'Admin management', text: 'A Node.js service layer to moderate and coordinate.' },
+    ],
+    gallery: [],
+    links: {},
     featured: true,
   },
 ]

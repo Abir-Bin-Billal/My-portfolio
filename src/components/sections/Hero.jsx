@@ -137,7 +137,7 @@ export default function Hero() {
             transition={{ duration: 0.9, delay: 0.45, ease: [0.22, 1, 0.36, 1] }}
             className="relative mx-auto w-full max-w-[340px] lg:max-w-none"
           >
-            <PhoneMockup />
+            <PortraitCard />
           </motion.div>
         </div>
 
@@ -161,77 +161,26 @@ export default function Hero() {
   )
 }
 
-function PhoneMockup() {
-  const miniStats = [
-    { label: 'Sessions', value: '2.4k', accent: 'text-brand-300' },
-    { label: 'Rating', value: '4.9', accent: 'text-mint' },
-  ]
-
+function PortraitCard() {
   return (
     <div className="relative">
       <div className="absolute -inset-8 rounded-[3rem] bg-[radial-gradient(circle_at_60%_30%,rgba(56,189,248,0.22),transparent_65%)] blur-2xl" />
 
       <div className="relative animate-float-slow">
-        <div className="relative mx-auto w-[268px] rounded-[2.6rem] border border-white/12 bg-ink-900/90 p-3 shadow-[0_40px_90px_-40px_rgba(2,6,23,1)] backdrop-blur-xl">
-          <div className="absolute left-1/2 top-3 h-5 w-24 -translate-x-1/2 rounded-full bg-ink-950/90" />
-          <div className="overflow-hidden rounded-[2.1rem] border border-white/[0.07] bg-gradient-to-b from-ink-800 to-ink-950">
-            <div className="flex items-center justify-between px-5 pt-7 pb-3 font-mono text-[10px] text-slate-500">
-              <span>9:41</span>
-              <span className="flex items-center gap-1">
-                <span className="h-1.5 w-1.5 rounded-full bg-mint" />
-                5G
-              </span>
-            </div>
+        <div className="relative mx-auto w-full max-w-[380px] rounded-[2.4rem] border border-white/12 bg-ink-900/80 p-2.5 shadow-[0_40px_90px_-40px_rgba(2,6,23,1)] backdrop-blur-xl">
+          <div className="relative overflow-hidden rounded-[1.9rem] border border-white/[0.07] bg-gradient-to-b from-ink-800 to-ink-950">
+            <img
+              src="/me.jpeg"
+              alt={`${profile.name} — ${profile.role}`}
+              className="aspect-[5/6] h-full w-full object-cover"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-ink-950/85 via-ink-950/5 to-transparent" />
 
-            <div className="px-5 pb-6">
-              <p className="text-[11px] text-slate-500">Good morning,</p>
-              <p className="font-display text-lg font-semibold text-white">Abir 👋</p>
-
-              <div className="mt-4 rounded-2xl border border-brand-400/25 bg-gradient-to-br from-brand-500/18 to-violet-glow/12 p-4">
-                <p className="font-mono text-[10px] uppercase tracking-[0.16em] text-brand-200/80">Balance</p>
-                <p className="mt-1.5 font-display text-2xl font-bold text-white">$12,480.50</p>
-                <div className="mt-3 flex items-center gap-1.5">
-                  <span className="rounded-full bg-mint/15 px-2 py-0.5 font-mono text-[10px] text-mint">
-                    +18.2%
-                  </span>
-                  <span className="font-mono text-[10px] text-slate-500">this month</span>
-                </div>
-              </div>
-
-              <div className="mt-3 grid grid-cols-2 gap-3">
-                {miniStats.map((item) => (
-                  <div key={item.label} className="rounded-xl border border-white/[0.07] bg-white/[0.03] p-3">
-                    <p className="font-mono text-[10px] uppercase tracking-[0.14em] text-slate-500">
-                      {item.label}
-                    </p>
-                    <p className={`mt-1 font-display text-base font-semibold ${item.accent}`}>{item.value}</p>
-                  </div>
-                ))}
-              </div>
-
-              <div className="mt-3 rounded-xl border border-white/[0.07] bg-white/[0.03] p-3">
-                <div className="flex items-center justify-between">
-                  <span className="font-mono text-[10px] uppercase tracking-[0.14em] text-slate-500">
-                    Weekly flow
-                  </span>
-                  <span className="font-mono text-[10px] text-brand-300">+6.4%</span>
-                </div>
-                <div className="mt-3 flex h-16 items-end gap-1.5">
-                  {[38, 62, 45, 78, 55, 90, 70].map((height, index) => (
-                    <motion.span
-                      key={index}
-                      initial={{ height: 4, opacity: 0.35 }}
-                      animate={{ height: `${height}%`, opacity: 1 }}
-                      transition={{ duration: 0.8, delay: 1 + index * 0.08, ease: [0.22, 1, 0.36, 1] }}
-                      className={`flex-1 rounded-full ${
-                        index === 5
-                          ? 'bg-gradient-to-t from-brand-500 to-violet-glow'
-                          : 'bg-gradient-to-t from-brand-500/45 to-brand-300/25'
-                      }`}
-                    />
-                  ))}
-                </div>
-              </div>
+            <div className="absolute inset-x-4 bottom-4">
+              <p className="font-display text-lg font-bold tracking-tight text-white">{profile.name}</p>
+              <p className="mt-0.5 font-mono text-[10.5px] uppercase tracking-[0.18em] text-brand-200/80">
+                {profile.role}
+              </p>
             </div>
           </div>
         </div>

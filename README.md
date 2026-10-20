@@ -64,17 +64,15 @@ A native iOS personal finance application featuring an interactive dashboard, in
 
 **Tech:** Swift · SwiftUI · Native iOS
 
-### Daily Expense Tracker
-*Nov 2024 – Feb 2025*
+### Tally
+A production-grade Flutter ledger and inventory app for small merchants. Tracks customers, suppliers and stock, keeps a running *dibo / pabo* ledger, runs a cashbox, and exports PDF reports — all offline-first with a custom bi-directional sync engine that reconciles changes with a FastAPI + PostgreSQL backend. Built on Clean Architecture with BLoC/Cubit.
 
-A cross-platform expense tracking app for daily, monthly, and yearly financial management with offline-first storage. Users can categorize expenses, set budgets, and view interactive charts for spending insights, without requiring sign-up. Optimized for low-resource devices.
+**Tech:** Flutter · Dart · BLoC · Cubit · Clean Architecture · SQLite · FastAPI · PostgreSQL
 
-**Tech:** Flutter · Dart · SQLite · MySQL · Bloc
+### Ritual
+A Flutter wellness ritual tracker wrapped in a liquid-glass design language and built on Clean Architecture with BLoC/Cubit state management. Fully declarative `go_router` navigation, a custom animation library, a hand-painted breathing orb, and a centralized glass design system applied to every surface.
 
-### Flutter Chat Pro
-A feature-rich chat application built with Flutter, enabling real-time messaging, media sharing, and user authentication.
-
-**Tech:** Flutter · Firebase · Firestore · Provider
+**Tech:** Flutter · Dart · BLoC · Cubit · go_router · Clean Architecture
 
 ### Dare to Donate
 A cross-platform blood donation app enabling real-time requests, donor registration, emergency alerts, and admin management.
